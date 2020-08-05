@@ -3,7 +3,7 @@ import './App.css';
 import images from './data.js';
 import Header from './Header.js';
 import ImageList from './ImageList.js';
-import { render } from '@testing-library/react';
+import render  from '@testing-library/react';
 
 const options = [
   'narwhal',
@@ -51,8 +51,15 @@ render() {
             options.map(keyword => <option key={keyword} value={keyword}>{keyword}</option>)
           }
         </select>
+        <select onChange={this.handleHorns}>
+          {
+            options.map(keyword => <option key={keyword} value={keyword}>{keyword}</option>)
+          }
+        </select>
+        
       <div className="gallery">
         <ImageList images={keyImages}/>
+        <ImageList images={hornImages}/>
       </div>
     </div>
   )
