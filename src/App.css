@@ -27,6 +27,8 @@
 
 img {
   height: 200px;
+  border: dimgray solid 5px;
+  
 }
 
 .gallery {
