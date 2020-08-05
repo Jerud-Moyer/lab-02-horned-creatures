@@ -25,9 +25,9 @@ class App extends React.Component {
     horns: '',
   }
 
-  handleKeywordType = (e) => {
+  handleDropDown = (e) => {
     const keyword = e.target.value;
-    this.setstate({ keyword })
+    this.setState({ keyword })
   
   }
 
@@ -52,7 +52,7 @@ render() {
           }
         </select>
       <div className="gallery">
-        <ImageList images={images}/>
+        <ImageList images={keyImages}/>
       </div>
     </div>
   )
